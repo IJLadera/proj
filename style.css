@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: relative;
+}
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul {
+    display: flex;
+    list-style: none; 
+}
+.navbar ul li {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+.navbar ul li a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+
+}
+.navbar ul li a:hover {
+    color: aqua;
+    transition: all 0.4s ease 0%;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(bak1`.png) no-repeat center center/cover;
+    width: 72%;
+    height: 72%;
+}
+.heading {
+    color: white;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+.gallery img {
+    width: 600px;
+    height: 600px;
+    padding: 10px;
+    margin: 10px;
+}
+.gallery img:hover {
+    background-color: white;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#about h1 {
+    margin: 55px;
+    color: white;
+}
+.about {
+    display: flex;
+    
+}
+#about img {
+    width: 500px;
+    height: 400px;
+    padding: 0px 30px;
+}
+.name {
+    padding: 10px;
+}
+.name h2 {
+    font-size: 2rem;
+}
+.name p {
+    font-size: 1.5rem;
+}
